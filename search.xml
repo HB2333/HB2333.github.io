@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>初来乍到，不点进来喝杯茶吗QvQ</title>
+    <url>/2333/01/01/hello/</url>
+    <content><![CDATA[<h2 id="3-ヽ-先喝杯茶啦"><a href="#3-ヽ-先喝杯茶啦" class="headerlink" title="(:3_ヽ)_先喝杯茶啦~"></a>(:3_ヽ)_先喝杯茶啦~</h2><h3 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h3><p>​		弄一个属于自己的小天地是我的一个小梦想，毕竟谁都希望自己有个空间能蹲一蹲，放点东西，或者是躺在这里面休息。所以就出现了这个Blog~</p>
+<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><p>​		曾经在初二的时候（好像吧？）就有过膜拜大佬们能够自己创作自己的网站。当时正值玩MC学MC里的指令，刚好有点兴趣的时候就选择自学http。当时真的就是手操网站（累死了）还懒得学css和js。导致我提前放弃。(；д；)。</p>
+<p>​		不过到现在考上了自己想要的专业（但是没考上自己想要的大学），认识了很多大佬，也学会了自己动手做有趣的东西，像QQ机器人呀（老是被风控，烦死了，<a href="https://github.com/HibiKier/zhenxun_bot/tree/main">机器人出自这里哦~</a>），这个Blog网站呀。相比身边的人，自己进步了很多，也很开心（但是我不卷啊，可恶，卷王们太卷了，我菜又爱玩(¦3[▓▓]）</p>
+<p>​		To be continue…（会持续更新，大概吧ヾ(๑╹◡╹)ﾉ”）</p>
+<h3 id="末尾"><a href="#末尾" class="headerlink" title="末尾"></a>末尾</h3><p>希望大家能在Blog里开森交流，又或者能在其中学习到什么，我也就知足啦(๑╹ヮ╹๑)ﾉ</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>茶会</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的spawn failed错误与解决方法</title>
+    <url>/2022/05/19/hexo%E4%B8%8A%E4%BC%A0%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h2><ol>
+<li><p>先是出现错误：</p>
+<p><code>error：spawn failed...</code></p>
+</li>
+<li><p>然后经过一些博客的操作会出现以下问题：</p>
+<p><code>fatal: cannot lock ref &#39;HEAD&#39;: unable to resolve reference HEAD: Invalid argument error: src refspec</code></p>
+</li>
+<li><p>或者：</p>
+<p><code>error: src refspec HEAD does not match any.</code></p>
+<p>等等</p>
+</li>
+</ol>
+<h4 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h4><p>问题大多是因为<code>git</code>进行<code>push</code>或者<code>hexo d</code>的时候改变了一些<code>.deploy_git</code>文件下的内容。</p>
+<h2 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h2><ol>
+<li>删除<code>.deploy_git</code>文件夹;</li>
+<li>输入<code>git config --global core.autocrlf false</code></li>
+<li>然后，依次执行：<br><code>hexo clean</code><br><code>hexo g</code><br><code>hexo d</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常见图形</title>
+    <url>/2022/05/19/imaMath/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">圆柱面</th>
+<th align="center"><strong>x²＋y²＝R²</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">椭圆柱面</td>
+<td align="center">x²&#x2F;a²+y²&#x2F;b²&#x3D;1</td>
+</tr>
+<tr>
+<td align="center">双曲柱面</td>
+<td align="center">x²&#x2F;a²-y²&#x2F;b²&#x3D;1</td>
+</tr>
+<tr>
+<td align="center">抛物柱面</td>
+<td align="center">x²&#x3D;2ay或y²＝2ax</td>
+</tr>
+<tr>
+<td align="center">圆锥面</td>
+<td align="center">(x²+y²)&#x2F;a²-z²&#x2F;b²&#x3D;0</td>
+</tr>
+<tr>
+<td align="center">球面</td>
+<td align="center">(x-a)²＋(y-b)²＋(z-c)²&#x3D;r²</td>
+</tr>
+<tr>
+<td align="center">椭圆锥面</td>
+<td align="center">x²&#x2F;a²+y²&#x2F;b²-z²&#x2F;c²&#x3D;0</td>
+</tr>
+<tr>
+<td align="center">椭球面</td>
+<td align="center">x²&#x2F;a²+y²&#x2F;b²+z²&#x2F;c²&#x3D;1</td>
+</tr>
+<tr>
+<td align="center">椭圆抛物面</td>
+<td align="center">x²&#x2F;2a+y²&#x2F;2b&#x3D;z</td>
+</tr>
+<tr>
+<td align="center">单叶双曲面</td>
+<td align="center">x²&#x2F;a²+y²&#x2F;b²-z²&#x2F;c²&#x3D;1</td>
+</tr>
+<tr>
+<td align="center">双叶双曲面</td>
+<td align="center">x²&#x2F;a²-y²&#x2F;b²-z²&#x2F;c²&#x3D;-1</td>
+</tr>
+<tr>
+<td align="center">双曲抛物面 (马鞍面)</td>
+<td align="center">x²&#x2F;a²-y²&#x2F;b²&#x3D;z</td>
+</tr>
+</tbody></table>
+<h3 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h3><p>x、y、z为未知数</p>
+<p>a、b、c为已知数</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+</search>
